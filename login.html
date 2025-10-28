@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://kit.fontawesome.com/7126af216b.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="body-2">
+    
+
+    <div class="dd2 wow animate__animated animate__jackInTheBox" id="container" style="z-index:1">
+        <form action="home.html" method="post" id="login">
+            <h1>Email:</h1>
+            <input type="text" id="logmail" />
+            <br />
+            <br />
+            <h1>Password:</h1>
+            <input type="text" id="logpas" />
+            <br />
+            <button onclick="getlogin()" type="button" class="btn btn-outline-primary" id="logbtn">Submit</button>
+            <br />
+            <br />
+            <hr style="background-color:black"/>
+
+            <h3>
+                You haven't account?
+            </h3>
+            <a href="reg.html">
+                Register now
+            </a>
+        </form>
+    </div>
+    <div id="suclog">
+        <div id="suclogin" style="border:1px black solid;background-color:white; position: absolute; z-index: 0; opacity: 0; visibility: hidden; top: 30px; left:500px; width: 500px; height: 500px">
+            <center>
+                <h1 style="font-weight:bolder; margin-top:100px">
+                    You have succesfully logined!
+                </h1>
+                <br />
+                <img src="success.gif" style="width:150px; height:150px; border-radius:20px" />
+            </center>
+            <button onclick="location.href='home.html'" style="background-color: dodgerblue; cursor:pointer; width:95%; margin:10px; height:30px; border-radius:10px; margin-top:50px;color:white;">
+                Go to home page
+            </button>
+        </div>
+    </div>
+    <div id="errlog">
+        <div id="errlogin" style="border:1px black solid;background-color:#141518; position: absolute; z-index: 0; opacity: 0; visibility: hidden; left:500px; top: 30px; width: 500px; height: 500px">
+            <center>
+                <h1 style="font-weight:bolder; margin-top:100px; color:azure">
+                    Error! Error! Error!
+                </h1>
+                <br />
+                <img src="error.gif" style="width:150px; height:150px; border-radius:20px" />
+            </center>
+            <button onclick="location.href='login.html'" style="background-color: dodgerblue; cursor:pointer; width:95%; margin:10px; height:30px; border-radius:10px; margin-top:50px;color:white;">
+                Please, try again
+            </button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
