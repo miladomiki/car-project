@@ -5,7 +5,6 @@ $(function () {
 
 function getcar1() {
     $.get('https://my-json-server.typicode.com/KuanyshZhardenbay/endtermweb/cars', function (resp, status, resp_obj) {
-        console.log(status);
         $('#cars').html(resp[0].name);
         $('#carsinf').html(resp[0].info);
         $('#carsimg').attr('src', resp[0].logo);
